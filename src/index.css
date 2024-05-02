@@ -1,0 +1,14 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "../assets/css/Bayon.css";
+@import "../assets/css/Lato.css";
+@import "../assets/css/Minercraftory.css";
+@import "../assets/css/Motiva Sans Test.css";
+@import "../assets/css/Animated-Button-1.css";
+
+html, body {
+  font-family: 'Motiva Sans Test';
+}
+
+body {
+  background: #1f1f23;
+}
