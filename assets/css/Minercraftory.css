@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Minercraftory';
+	src: url(../../assets/fonts/Minercraftory-b8b6ae5c6e40824e3a2a4c6e76e36ebe.woff2) format('woff2'),
+	url(../../assets/fonts/Minercraftory-3a391292a3bd04cd6d515adba008ff33.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
