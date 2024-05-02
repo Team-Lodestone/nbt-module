@@ -9,6 +9,7 @@ import Xbox_One_Platform_Icon from "../assets/img/PLATFORMS/Xbox_One_Platform_Ic
 import PlayStation_4_Platform_Icon from "../assets/img/PLATFORMS/PlayStation_4_Platform_Icon.svg";
 import Nintendo_Switch_Platform_Icon from "../assets/img/PLATFORMS/Nintendo_Switch_Platform_Icon.svg";
 import Header from "./Header.js";
+import Platform from "./Platform.js";
 
 export default function CreateNBT() {
     return (
@@ -29,20 +30,5 @@ export default function CreateNBT() {
                 <Platform name="Switch" src={Nintendo_Switch_Platform_Icon} size={70}/>
             </div>
         </>
-    );
-}
-
-interface PlatformProps {
-    name: string;
-    src: string;
-    size: number;
-}
-
-function Platform(props: PlatformProps) {
-    return (
-        <button class="btn btn-primary" type="button" style="background: rgb(55,60,70);color: white;margin-bottom: 15px;margin-right: 5px;margin-left: 5px;width: 190px;height: 190px;border: 2px solid rgb(75,80,90);border-radius: 15px;font-size: 14px;">
-            <img class="justify-content-center align-items-center align-content-center align-self-center" style={`width: ${props.size}px;height: ${props.size}px;margin-right: 40px;margin-left: 40px;margin-bottom: 15px;`} src={props.src}/>
-            &nbsp;{props.name}
-        </button>
     );
 }
