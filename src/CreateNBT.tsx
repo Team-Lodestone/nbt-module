@@ -8,11 +8,12 @@ import PlayStation_Vita_Platform_Icon from "../assets/img/PLATFORMS/PlayStation_
 import Xbox_One_Platform_Icon from "../assets/img/PLATFORMS/Xbox_One_Platform_Icon.svg";
 import PlayStation_4_Platform_Icon from "../assets/img/PLATFORMS/PlayStation_4_Platform_Icon.svg";
 import Nintendo_Switch_Platform_Icon from "../assets/img/PLATFORMS/Nintendo_Switch_Platform_Icon.svg";
+import Header from "./Header.js";
 
 export default function CreateNBT() {
     return (
         <>
-            <h2 class="text-center" style="margin-bottom: 30px;color: white;margin-top: 50px;font-weight: bold;">Select A Platform!</h2>
+            <Header>Select A Platform!</Header>
             <div class="col text-center" style="background: rgb(35,40,50);border-top: 2px solid rgb(75,80,90) ;">
                 <Platform name="Java" src={Java_Platform_Icon} size={70}/>
                 <Platform name="Bedrock" src={Bedrock_Platform_Icon} size={70}/>

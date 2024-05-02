@@ -1,6 +1,7 @@
-import { Page } from "./App.js";
+import Header from "./Header.js";
 
 import type { Setter } from "solid-js";
+import type { Page } from "./App.js";
 
 export interface MainProps {
     setPage: Setter<Page>;
@@ -9,9 +10,7 @@ export interface MainProps {
 export default function Main(props: MainProps) {
     return (
         <>
-            <div class="container">
-                <h2 class="text-center" style="margin-bottom: 30px;color: white;margin-top: 50px;font-weight: bold;">NBT Editor</h2>
-            </div>
+            <Header>NBT Editor</Header>
             <div class="col text-center" style="background: rgb(35,40,50);border-top: 2px solid rgb(75,80,90) ;border-bottom: 2px solid rgb(75,80,90) ;">
                 <button class="btn btn-primary" type="button" style="background: rgb(55,60,70);margin-top: 15px;color: white;margin-bottom: 15px;margin-right: 5px;margin-left: 5px;width: 190px;height: 190px;font-size: 14px;border: 2px solid rgb(75,80,90);border-radius: 15px;" onclick={() => props.setPage("nbt-editor")}>
                     <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor" class="justify-content-center align-items-center align-content-center align-self-center icon" style="color: rgb(250,250,250);width: 70px;height: 70px;margin-right: 40px;margin-left: 40px;margin-bottom: 15px;">
